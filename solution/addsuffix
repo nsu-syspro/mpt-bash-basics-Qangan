@@ -4,8 +4,5 @@ suffix=$1
 shift
 
 for file in "$@"; do
-    if [[ -f $file ]]; then
-        name="${file}"
-        mv "$file" "$file${suffix}"
-    fi
+    mv "$file" "$file$suffix"
 done
