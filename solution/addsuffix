@@ -6,6 +6,6 @@ shift
 for file in "$@"; do
     if [[ -f $file ]]; then
         name="${file}"
-        mv "$file" "${name}${suffix}"
+        mv "$file" "$file${suffix}"
     fi
 done
